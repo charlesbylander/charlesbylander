@@ -20,7 +20,7 @@ wishes.forEach(wish => {
     createWishlistItem(wish);
 });
 
-// Födelsedagsräknare
+// countdown
 const countdownElement = document.getElementById('countdown');
 
 function updateCountdown() {
@@ -48,16 +48,13 @@ function showImage(wish) {
     const imageContainer = document.getElementById('image-container');
     const wishlistImage = document.getElementById('wishlist-image');
 
-    // Byt ut bildkällan baserat på önskningen
     wishlistImage.src = `${wish}.png`;
 
-    // Visa bildcontainer
     imageContainer.style.display = 'block';
 }
 
 function closeImage() {
     const imageContainer = document.getElementById('image-container');
 
-    // Dölj bildcontainer
     imageContainer.style.display = 'none';
 }
