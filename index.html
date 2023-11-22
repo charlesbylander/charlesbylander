@@ -13,16 +13,23 @@
 <body>
     <div class="container">
         <h1>Charles önskelista</h1>
+
+        <div class="tips">
+            <h3>Tryck på ett önskemål för att få upp en bild på det</h3>
+        </div>
+
         <div class="wishlist" id="wishlist">
             <!-- önskningar -->
-            <div class="wishlist-item" onclick="showImage('cykel')"><img src="cykel-icon.png" alt="Cykel" width="20" height="20"> Vintage Racer Cykel</div>
-            <div class="wishlist-item" onclick="showImage('ryggsäck')"><img src="ryggsäck-icon.png" alt="Cykel" width="20" height="20"> Oakley skate-ryggsäck</div>
-            <div class="wishlist-item" onclick="showImage('tarp')"><img src="tarp-icon.png" alt="Cykel" width="20" height="20"> Tarp</div>
-            <div class="wishlist-item" onclick="showImage('yxa')"><img src="yxa-icon.png" alt="Cykel" width="20" height="20"> Vildmarksyxa från biltema</div>
-            <div class="wishlist-item" onclick="showImage('hjälm')"><img src="hjälm-icon.png" alt="Cykel" width="20" height="20"> TSG hjälm</div>
-            <div class="wishlist-item" onclick="showImage('bar')"><img src="bar-icon.png" alt="Cykel" width="20" height="20"> Pull-up bar</div>
-            <div class="wishlist-item" onclick="showImage('pegboard')"><img src="pegboard-icon.png" alt="Cykel" width="20" height="20"> Ikea SKÅDIS</div>
-            <div class="wishlist-item" onclick="showImage('kniv')"><img src="kniv-icon.png" alt="Cykel" width="20" height="20"> Hultafors friluftskniv OK4</div>
+            <div class="wishlist-item" onclick="showImage('images/cykel')"><img src="icon/cykel-icon.png" alt="Cykel" width="20" height="20">Vintage Racer Cykel</div>
+            <div class="wishlist-item" onclick="showImage('images/ryggsäck')"><img src="icon/ryggsäck-icon.png" alt="Ryggsäck" width="20" height="20">Oakley skate-ryggsäck</div>
+            <div class="wishlist-item" onclick="showImage('images/tarp')"><img src="icon/tarp-icon.png" alt="Tarp" width="20" height="20">Tarp</div>
+            <div class="wishlist-item" onclick="showImage('images/yxa')"><img src="icon/yxa-icon.png" alt="Yxa" width="20" height="20">Vildmarksyxa från biltema</div>
+            <div class="wishlist-item" onclick="showImage('images/hjälm')"><img src="icon/hjälm-icon.png" alt="Hjälm" width="20" height="20">TSG hjälm</div>
+            <div class="wishlist-item" onclick="showImage('images/bar')"><img src="icon/bar-icon.png" alt="Bar" width="20" height="20">Pull-up bar</div>
+            <div class="wishlist-item" onclick="showImage('images/pegboard')"><img src="icon/pegboard-icon.png" alt="Pegboard" width="20" height="20">Ikea SKÅDIS</div>
+            <div class="wishlist-item" onclick="showImage('images/kniv')"><img src="icon/kniv-icon.png" alt="Kniv" width="20" height="20">Hultafors friluftskniv OK4</div>
+            <div class="wishlist-item" onclick="showImage('images/bälte')"><img src="icon/bälte-icon.png" alt="Kniv" width="20" height="20">Dickies bälte</div>
+            <div class="wishlist-item" onclick="showImage('images/gurka')"><img src="icon/gurka-icon.png" alt="Kniv" width="20" height="20">Gurka</div>
         </div>
 
         <h2>Hidden</h2>
@@ -37,7 +44,7 @@
         <img id="wishlist-image" src="" alt="Önskan">
         <span id="close-btn" onclick="closeImage()">✖</span>
     </div>
-      
+
     <script src="script.js"></script>
 </body>
 

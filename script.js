@@ -1,25 +1,3 @@
-// Önskelista
-const wishlistElement = document.getElementById('wishlist');
-
-function createWishlistItem(wish) {
-    const item = document.createElement('div');
-    item.classList.add('wishlist-item');
-    item.innerHTML = wish;
-    wishlistElement.appendChild(item);
-
-    item.addEventListener('click', function() {
-        item.classList.toggle('wishlist-item-expanded');
-    });
-}
-
-const wishes = [
-    // Lägg till fler önskningar här
-];
-
-wishes.forEach(wish => {
-    createWishlistItem(wish);
-});
-
 // countdown
 const countdownElement = document.getElementById('countdown');
 
@@ -32,7 +10,6 @@ function updateCountdown() {
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
     countdownElement.innerHTML = `
         <span class="countdown-number">${days}</span> Dagar
@@ -43,6 +20,8 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+// image
 
 function showImage(wish) {
     const imageContainer = document.getElementById('image-container');
