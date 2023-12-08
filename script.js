@@ -3,7 +3,7 @@ const countdownElement = document.getElementById('countdown');
 
 function updateCountdown() {
     const today = new Date();
-    const birthday = new Date('2023-12-03');
+    const birthday = new Date('2023-12-24');
 
     const difference = birthday - today;
 
@@ -14,7 +14,7 @@ function updateCountdown() {
     countdownElement.innerHTML = `
         <span class="countdown-number">${days}</span> Dagar
         <span class="countdown-number">${hours}</span> timmar
-        <span class="countdown-number">${minutes}</span> minuter tills Charles fyller år!
+        <span class="countdown-number">${minutes}</span> minuter till julafton!
     `;
 }
 
