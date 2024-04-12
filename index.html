@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles önskelista</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png"
+    href="icon.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Charles önskelista</h1>
+        <div class="wishlist" id="wishlist">
+            <!-- önskningar -->
+            <div class="wishlist-item" onclick="showImage(' ')"><img src=" " alt=" " width="20" height="20"> Ingenting på önske listan än...</div>
+        </div>
+
+        <h2>Hidden</h2>
+        <h2>...</h2>
+
+        <div class="countdown" id="countdown">      
+            <!-- countdown -->
+        </div>
+    </div>
+
+    <div id="image-container">
+        <img id="wishlist-image" src="" alt="Önskan">
+        <span id="close-btn" onclick="closeImage()">✖</span>
+    </div>
+      
+    <script src="script.js"></script>
+</body>
+
+</html>
